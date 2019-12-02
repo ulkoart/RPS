@@ -23,7 +23,7 @@ class RPSTests: XCTestCase {
         let sign = Sign.rock
         print (sign)
         print (sign.emoji)
-        XCTAssert(sign. getResult(.rock) == .draw)
+        XCTAssert(sign.getResult(.rock) == .draw)
     }
 
 
