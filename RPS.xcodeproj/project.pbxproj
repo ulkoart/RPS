@@ -13,6 +13,8 @@
 		CE3B15C32394E58E0029954C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE3B15C22394E58E0029954C /* Assets.xcassets */; };
 		CE3B15C62394E58E0029954C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE3B15C42394E58E0029954C /* LaunchScreen.storyboard */; };
 		CE3B15D12394E58E0029954C /* RPSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3B15D02394E58E0029954C /* RPSTests.swift */; };
+		CE3B15DC2394E6040029954C /* GameState.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3B15DB2394E6030029954C /* GameState.swift */; };
+		CE3B15DE2394E6310029954C /* Sign.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3B15DD2394E6310029954C /* Sign.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +38,8 @@
 		CE3B15CC2394E58E0029954C /* RPSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RPSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE3B15D02394E58E0029954C /* RPSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RPSTests.swift; sourceTree = "<group>"; };
 		CE3B15D22394E58E0029954C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE3B15DB2394E6030029954C /* GameState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameState.swift; sourceTree = "<group>"; };
+		CE3B15DD2394E6310029954C /* Sign.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sign.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +82,8 @@
 			isa = PBXGroup;
 			children = (
 				CE3B15BB2394E58B0029954C /* AppDelegate.swift */,
+				CE3B15DB2394E6030029954C /* GameState.swift */,
+				CE3B15DD2394E6310029954C /* Sign.swift */,
 				CE3B15BD2394E58B0029954C /* ViewController.swift */,
 				CE3B15BF2394E58B0029954C /* Main.storyboard */,
 				CE3B15C22394E58E0029954C /* Assets.xcassets */,
@@ -197,7 +203,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE3B15DC2394E6040029954C /* GameState.swift in Sources */,
 				CE3B15BE2394E58B0029954C /* ViewController.swift in Sources */,
+				CE3B15DE2394E6310029954C /* Sign.swift in Sources */,
 				CE3B15BC2394E58B0029954C /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
