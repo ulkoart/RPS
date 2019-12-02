@@ -19,21 +19,27 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="13" translatesAutoresizingMaskIntoConstraints="NO" id="2gi-DP-MHH">
-                                <rect key="frame" x="68" y="186" width="239" height="295.5"/>
+                                <rect key="frame" x="68" y="169" width="239" height="329"/>
                                 <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0:0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HdZ-3C-1Ze">
+                                        <rect key="frame" x="107" y="0.0" width="25.5" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iMG-zt-kbu">
-                                        <rect key="frame" x="82" y="0.0" width="75" height="96"/>
+                                        <rect key="frame" x="82" y="33.5" width="75" height="96"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="70"/>
                                         <state key="normal" title="🤖"/>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rock, Paper, Scissors?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4t9-7F-9fR">
-                                        <rect key="frame" x="33.5" y="109" width="172.5" height="20.5"/>
+                                        <rect key="frame" x="33.5" y="142.5" width="172.5" height="20.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="7" translatesAutoresizingMaskIntoConstraints="NO" id="PQd-lb-ah9">
-                                        <rect key="frame" x="0.0" y="142.5" width="239" height="96"/>
+                                        <rect key="frame" x="0.0" y="176" width="239" height="96"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sqQ-Nj-bDn">
                                                 <rect key="frame" x="0.0" y="0.0" width="75" height="96"/>
@@ -62,7 +68,7 @@
                                         </subviews>
                                     </stackView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JSH-W5-RHe">
-                                        <rect key="frame" x="60.5" y="251.5" width="118" height="44"/>
+                                        <rect key="frame" x="60.5" y="285" width="118" height="44"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="26"/>
                                         <state key="normal" title="Play Again">
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -72,6 +78,10 @@
                                         </connections>
                                     </button>
                                 </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="jVW-fl-qJo">
+                                <rect key="frame" x="174" y="69" width="25.5" height="20.5"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </stackView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -87,7 +97,8 @@
                         <outlet property="robotButton" destination="iMG-zt-kbu" id="Guv-ug-EVC"/>
                         <outlet property="rockButton" destination="sqQ-Nj-bDn" id="VAi-tT-qOd"/>
                         <outlet property="scissorsButton" destination="URS-wX-sDZ" id="jdc-Lp-K0I"/>
-                        <outlet property="statuslabel" destination="4t9-7F-9fR" id="C6S-Xw-pCR"/>
+                        <outlet property="scoreLabel" destination="HdZ-3C-1Ze" id="xYS-fb-q4V"/>
+                        <outlet property="statusLabel" destination="4t9-7F-9fR" id="C6S-Xw-pCR"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

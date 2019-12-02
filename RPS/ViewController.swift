@@ -10,8 +10,12 @@ import UIKit
 
 class ViewController: UIViewController {
     
+    var userScore: Int = 0
+    var computerScore: Int = 0
+    
+    @IBOutlet weak var scoreLabel: UILabel!
     @IBOutlet weak var robotButton: UIButton!
-    @IBOutlet weak var statuslabel: UILabel!
+    @IBOutlet weak var statusLabel: UILabel!
     @IBOutlet weak var rockButton: UIButton!
     @IBOutlet weak var paperButton: UIButton!
     @IBOutlet weak var scissorsButton: UIButton!
@@ -48,13 +52,20 @@ class ViewController: UIViewController {
         
         switch result {
         case .win:
-            statuslabel.text = "It`s a win!"
+            statusLabel.text = "It`s a win!"
             self.view.backgroundColor = UIColor.green
+            
+            userScore += 1
+            scoreLabel.text = "\(userScore):\(computerScore)"
+            
         case .lose:
-            statuslabel.text = "You lose!"
+            statusLabel.text = "You lose!"
             self.view.backgroundColor = UIColor.red
+            
+            computerScore += 1
+            scoreLabel.text = "\(userScore):\(computerScore)"
         case .draw:
-            statuslabel.text = "It`s a draw!"
+            statusLabel.text = "It`s a draw!"
             self.view.backgroundColor = UIColor.gray
         case .start:
             reset()
@@ -63,7 +74,7 @@ class ViewController: UIViewController {
     }
     
     func reset(){
-        statuslabel.text = "Rock, Paper, Scissors?"
+        statusLabel.text = "Rock, Paper, Scissors?"
         self.view.backgroundColor = UIColor.white
         robotButton.setTitle("🤖", for: .normal)
         resetButton.isHidden = true
